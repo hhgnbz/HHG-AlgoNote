@@ -133,6 +133,25 @@ boolean dfs() {
 }
 ```
 
+### BFS
+
+```java
+int[] bfs(int[] need) {
+    Deque<int[]> q = new ArrayDeque<>();
+    q.add(new int[]{sr,sc}); // 初始节点
+    while(!q.isEmpty()) { 
+        int[] cur = q.poll(); // 当前节点
+        if () { // 边界&判断正确条件
+            need[x][y] = ;// 修改返回值
+            q.add(new int[]{x,y}); // 条件符合加入队列继续判断
+        }
+    }
+    return need;
+}
+```
+
+
+
 ### 格雷码
 
 ```java
@@ -249,10 +268,20 @@ $$
   i=0,1,2...n-2
   $$
 
-- 
-
 - **例题**
+  
   1. LC1238 循环码排列 - 2023/02/23 每日一题(/Math/LC1238.java)
+
+### 约瑟夫环
+
+- **原型**
+
+  0,1,···,n-1这n个数字排成一个圆圈，从数字0开始，每次从这个圆圈里删除第m个数字（删除后从下一个数字开始计数）。求出这个圆圈里剩下的最后一个数字。
+
+- **公式**
+  $$
+  f(n,m) = (f(n - 1,m)+m) \% n
+  $$
 
 
 
@@ -283,6 +312,17 @@ $$
   1. 剑指offer12/LC79 矩阵中的路径 - (/Search/DFS/Offer12-LC79.java)
   1. 剑指offer68/LC236 二叉树的最近公共祖先 - (/Search/DFS/Offer68-LC236.java)
   1. 剑指offer07 重建二叉树 - (/Search/DFS/Offer07.java)
+
+### 广度优先搜索(BFS)
+
+- **原理**
+
+  由初始节点作为第一层，不断向外扩张，直到找不到符合条件的节点。
+
+- **例题**
+
+  1. LC733 图像渲染 - (/Search/BFS/LC733.java)
+  2. LC695 岛屿的最大面积- (/Search/BFS/LC695.java)
 
 
 
