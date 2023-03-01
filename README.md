@@ -323,6 +323,8 @@ $$
 
   1. LC733 图像渲染 - (/Search/BFS/LC733.java)
   2. LC695 岛屿的最大面积- (/Search/BFS/LC695.java)
+  3. LC542 01 矩阵 - (/Search/BFS/LC542.java)
+  4. LC994 腐烂的橘子 - (/Search/BFS/LC994.java)
 
 
 
