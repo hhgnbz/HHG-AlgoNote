@@ -20,7 +20,6 @@ PriorityQueue<Integer> pq = new PriorityQueue<>((a,b) -> a - b);
 ```
 
 
-
 ## 常用算法模板
 
 ### 数字各位数和
